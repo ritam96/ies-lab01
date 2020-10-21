@@ -10,6 +10,8 @@ import java.util.Map;
 
 public class MyWeatherRadar {
 
+    private static String CITY;
+
     private static int CITY_ID;
     /*
     loggers provide a better alternative to System.out.println
@@ -51,7 +53,12 @@ public class MyWeatherRadar {
 
     public static void main(String[] args) {
 
-        CITY_ID = Integer.parseInt(args[0]);
+        CITY = args[0];
+        if (!cityIds.containsKey(CITY)) {
+            logger.error("Couldn't find the requested city! City: {}", CITY);
+            System.exit(0);
+        }
+        CITY_ID = cityIds.get(CITY);
          /*
         get a retrofit instance, loaded with the GSon lib to convert JSON into objects
          */
@@ -62,7 +69,7 @@ public class MyWeatherRadar {
 
         IpmaService service = retrofit.create(IpmaService.class);
 
-        logger.info("Getting IPMA forecast for cityId {}", CITY_ID);
+        logger.info("Getting IPMA forecast for city {} (cityId {})", CITY, CITY_ID);
         Call<IpmaCityForecast> callSync = service.getForecastForACity(CITY_ID);
 
         try {
@@ -70,13 +77,13 @@ public class MyWeatherRadar {
             IpmaCityForecast forecast = apiResponse.body();
 
             if (forecast != null) {
-                logger.info( "max temp for today: " + forecast.getData().
+                logger.info( "max temp for today in {}: {}", CITY, forecast.getData().
                         listIterator().next().getTMax());
             } else {
-                logger.info( "No results!");
+                logger.info( "No results for {}!", CITY);
             }
         } catch (Exception ex) {
-            logger.error("Exception when getting IPMA forecast for cityId {}. Exception {}", CITY_ID, ex);
+            logger.error("Exception when getting IPMA forecast for city {} (cityId {}). Exception {}", CITY, CITY_ID, ex);
         }
     }
 }
