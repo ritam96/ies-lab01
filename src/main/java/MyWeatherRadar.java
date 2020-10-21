@@ -79,6 +79,13 @@ public class MyWeatherRadar {
             if (forecast != null) {
                 logger.info( "max temp for today in {}: {}", CITY, forecast.getData().
                         listIterator().next().getTMax());
+                logger.info("NEXT FIVE DAYS WEATHER FORECAST: {} {} {} {} {}",
+                            forecast.getData().get(0).toString(),
+                            forecast.getData().get(1).toString(),
+                            forecast.getData().get(2).toString(),
+                            forecast.getData().get(3).toString(),
+                            forecast.getData().get(4).toString()
+                        );
             } else {
                 logger.info( "No results for {}!", CITY);
             }

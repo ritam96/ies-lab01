@@ -6,3 +6,43 @@
 [INFO ] 2020-10-21 21:51:00.100 [main] MyWeatherRadar - max temp for today in Viseu: 14.2
 [INFO ] 2020-10-21 21:51:53.709 [main] MyWeatherRadar - Getting IPMA forecast for city Porto Santo (cityId 2320100)
 [INFO ] 2020-10-21 21:51:53.933 [main] MyWeatherRadar - max temp for today in Porto Santo: 21.5
+[INFO ] 2020-10-21 21:57:02.625 [main] MyWeatherRadar - Getting IPMA forecast for city Porto Santo (cityId 2320100)
+[INFO ] 2020-10-21 21:57:02.780 [main] MyWeatherRadar - max temp for today in Porto Santo: 21.5
+[ERROR] 2020-10-21 21:57:20.943 [main] MyWeatherRadar - Couldn't find the requested city! City: Fake City
+[ERROR] 2020-10-21 22:07:43.239 [main] MyWeatherRadar - Couldn't find the requested city! City: Fake City
+[INFO ] 2020-10-21 22:08:02.079 [main] MyWeatherRadar - Getting IPMA forecast for city Aveiro (cityId 1010500)
+[INFO ] 2020-10-21 22:08:02.236 [main] MyWeatherRadar - max temp for today in Aveiro: 18.4
+[INFO ] 2020-10-21 22:08:02.240 [main] MyWeatherRadar - NEXT FIVE DAYS WEATHER FORECAST: 
+
+CityForecast[precipitaProb='100.0', tMin='13.5', tMax='18.4', predWindDir='S', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-21', latitude='40.6413']
+
+ 
+
+CityForecast[precipitaProb='100.0', tMin='13.1', tMax='18.7', predWindDir='S', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-22', latitude='40.6413']
+
+ 
+
+CityForecast[precipitaProb='85.0', tMin='10.6', tMax='17.4', predWindDir='NW', idWeatherType=6, classWindSpeed=1, longitude='-8.6535', forecastDate='2020-10-23', latitude='40.6413']
+
+ 
+
+CityForecast[precipitaProb='83.0', tMin='10.2', tMax='18.8', predWindDir='S', idWeatherType=7, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-24', latitude='40.6413']
+
+ 
+
+CityForecast[precipitaProb='100.0', tMin='11.0', tMax='17.3', predWindDir='W', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-25', latitude='40.6413']
+
+
+[INFO ] 2020-10-21 22:08:25.845 [main] MyWeatherRadar - Getting IPMA forecast for city Aveiro (cityId 1010500)
+[INFO ] 2020-10-21 22:08:25.996 [main] MyWeatherRadar - max temp for today in Aveiro: 18.4
+[INFO ] 2020-10-21 22:08:26.000 [main] MyWeatherRadar - NEXT FIVE DAYS WEATHER FORECAST: 
+
+CityForecast[precipitaProb='100.0', tMin='13.5', tMax='18.4', predWindDir='S', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-21', latitude='40.6413'] 
+
+CityForecast[precipitaProb='100.0', tMin='13.1', tMax='18.7', predWindDir='S', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-22', latitude='40.6413'] 
+
+CityForecast[precipitaProb='85.0', tMin='10.6', tMax='17.4', predWindDir='NW', idWeatherType=6, classWindSpeed=1, longitude='-8.6535', forecastDate='2020-10-23', latitude='40.6413'] 
+
+CityForecast[precipitaProb='83.0', tMin='10.2', tMax='18.8', predWindDir='S', idWeatherType=7, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-24', latitude='40.6413'] 
+
+CityForecast[precipitaProb='100.0', tMin='11.0', tMax='17.3', predWindDir='W', idWeatherType=6, classWindSpeed=2, longitude='-8.6535', forecastDate='2020-10-25', latitude='40.6413']

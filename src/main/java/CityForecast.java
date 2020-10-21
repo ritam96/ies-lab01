@@ -1,6 +1,8 @@
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.StringJoiner;
+
 public class CityForecast {
 
     @SerializedName("precipitaProb")
@@ -101,5 +103,20 @@ public class CityForecast {
 
     public void setLatitude(String latitude) {
         this.latitude = latitude;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", "\n\n" + CityForecast.class.getSimpleName() + "[", "]")
+                .add("precipitaProb='" + precipitaProb + "'")
+                .add("tMin='" + tMin + "'")
+                .add("tMax='" + tMax + "'")
+                .add("predWindDir='" + predWindDir + "'")
+                .add("idWeatherType=" + idWeatherType)
+                .add("classWindSpeed=" + classWindSpeed)
+                .add("longitude='" + longitude + "'")
+                .add("forecastDate='" + forecastDate + "'")
+                .add("latitude='" + latitude + "'")
+                .toString();
     }
 }
